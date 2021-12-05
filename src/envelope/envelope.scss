@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,300&display=swap');
 
 *,
 *::after,
@@ -43,7 +42,7 @@ body {
     position: absolute;
     height: 199px;
     width: 330px;
-    background-color: #7874a8;
+    background-color: #8E9169;
     z-index: -1;
     box-shadow: 0px 56px 72px -30px rgba(64, 46, 105, 0.66);
   }
@@ -51,11 +50,11 @@ body {
   .top {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -3%) rotateX(180deg);
+    transform: translate(-50%, -3%) rotateX(181deg);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     width: 330px;
     height: 150px;
-    background-color: #7874a8;
+    background-color: #afb382;
     top: 80px;
     transform-origin: center bottom;
     cursor: pointer;
@@ -119,3 +118,4 @@ body {
   opacity: 0;
   transition: opacity 200ms;
 }
+

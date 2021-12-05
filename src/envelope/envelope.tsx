@@ -17,7 +17,7 @@ export const Envelope = () => {
     const {guest} = useParams<{guest?: string}>();
 
     const getGuestNames = () => {
-        return guest?.split('-').join(' ');
+        return guest?.split('-').join(', ');
     }
 
     const [toggled, setToggled] = useState(false);
@@ -51,7 +51,7 @@ export const Envelope = () => {
         .to(card,
             {
                 ease: Power1.easeInOut,
-                scale: 2.5,
+                scale: 2.2,
             },
             2.5
         )
@@ -99,29 +99,27 @@ export const Envelope = () => {
                 <div onClick={() => setToggled(!toggled)} className="card" ref={(el:any) => (card = el)}>
                 <ReactCardFlip isFlipped={toggled} flipDirection="horizontal" flipSpeedFrontToBack={1.5} flipSpeedBackToFront={1.5}>
                     <InviteTitle/>
-                    <InviteText/>
+                    <InviteText names={getGuestNames()}/>
                 </ReactCardFlip>
 
                 </div>
                 <svg onClick={play} className="env" viewBox="0 0 668 541" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Group 1">
-                        <rect
-                            id="bottom"
-                            x="84"
-                            y="368"
-                            width="500"
-                            height="150"
-                            fill="#555084"
-                        />
+                        <rect    id="bottom"
+                                 x="84"
+                                 y="368"
+                                 width="500"
+                                 height="150"
+                                 fill="#afb382"/>
                         <path
                             id="left"
                             d="M335 368L83.75 517.822L83.75 218.178L335 368Z"
-                            fill="#5D5790"
+                            fill="#9fa376"
                         />
                         <path
                             id="right"
                             d="M333 368L584.25 517.822L584.25 218.178L333 368Z"
-                            fill="#5D5790"
+                            fill="#9fa376"
                         />
                     </g>
                 </svg>

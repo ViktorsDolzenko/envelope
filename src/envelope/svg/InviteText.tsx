@@ -1,6 +1,7 @@
 import React from "react";
 
 export const InviteText = (props: any) => {
+    const {names} = props;
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -213,7 +214,7 @@ export const InviteText = (props: any) => {
                     x="1435.08"
                     y="410.852"
                     fill="#CF9F81"
-                    fontFamily="'Cochin-Italic', 'Cochin'"
+                   fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="30"
                     fontStyle="italic"
                     fontWeight="500"
@@ -225,7 +226,7 @@ export const InviteText = (props: any) => {
                     x="1384.72"
                     y="454.258"
                     fill="#CF9F81"
-                    fontFamily="'Cochin-Italic', 'Cochin'"
+                   fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="26"
                     fontStyle="italic"
                     fontWeight="500"
@@ -234,26 +235,22 @@ export const InviteText = (props: any) => {
                     может пройти как обычный день и
                 </text>
                 <text
-                    x="1374.2"
+                    x="1375.19"
                     y="499.87"
                     fill="#CF9F81"
-                    fontFamily="'Cochin-Italic', 'Cochin'"
+                   fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="26"
                     fontStyle="italic"
                     fontWeight="500"
                     transform="translate(-17.468 9.302)"
                 >
-                    не запомнить
-                    <tspan x="1516.24px 1524.9px" y="499.87px 499.87px">
-                        ся
-                    </tspan>{" "}
-                    ничем особенным...
+                    не запомниться {names.includes(",") ? 'вам' : 'Вам'} ничем особенным...
                 </text>
                 <text
                     x="1361.8"
                     y="542.591"
                     fill="#CF9F81"
-                    fontFamily="'Cochin-Italic', 'Cochin'"
+                   fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="26"
                     fontStyle="italic"
                     fontWeight="500"
@@ -262,56 +259,46 @@ export const InviteText = (props: any) => {
                     А может стать одним из самых приятных
                 </text>
                 <text
-                    x="1380.6"
+                    x="1382.37"
                     y="582.252"
                     fill="#CF9F81"
-                    fontFamily="'Cochin-Italic', 'Cochin'"
+                   fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="26"
                     fontStyle="italic"
                     fontWeight="500"
                     transform="translate(0 11.852)"
                 >
-                    дней не только для нас, но и для !
+                    дней не только для нас, но и для {names.includes(",") ? 'вас' : 'Вас'}!
                 </text>
                 <text
-                    x="1369.03"
+                    x="1365.02"
                     y="619.476"
                     fill="#CF9F81"
-                    fontFamily="'Cochin-Italic', 'Cochin'"
+                   fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="26"
                     fontStyle="italic"
                     fontWeight="500"
                     transform="translate(6 13.143)"
                 >
-                    Очень ждём на нашем счастлив
-                    <tspan x="1721.85px 1731.96px" y="619.476px 619.476px">
-                        ом
-                    </tspan>
+                    Очень ждём {names.includes(",") ? 'вас' : 'Вас'} на нашем счастливом
                 </text>
                 <text
                     x="1423.2"
                     y="667.613"
                     fill="#CF9F81"
-                    fontFamily="'Cochin-Italic', 'Cochin'"
+                   fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="26"
                     fontStyle="italic"
                     fontWeight="500"
                     transform="translate(3 6.723)"
                 >
-                    празднике - нашей св
-                    <tspan
-                        x="1634.66px 1646.7px 1657.28px 1667.86px 1678.26px"
-                        y="667.613px 667.613px 667.613px 667.613px 667.613px"
-                    >
-                        адьбе
-                    </tspan>
-                    !
+                    празднике - нашей свадьбе!
                 </text>
                 <text
                     x="1476.87"
                     y="735.129"
                     fill="#CF9F81"
-                    fontFamily="'Cochin-Italic', 'Cochin'"
+                   fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="24"
                     fontStyle="italic"
                     fontWeight="500"
@@ -331,7 +318,7 @@ export const InviteText = (props: any) => {
                     x="1482.35"
                     y="778.574"
                     fill="#CF9F81"
-                    fontFamily="'Cochin-Italic', 'Cochin'"
+                   fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="24"
                     fontStyle="italic"
                     fontWeight="500"
@@ -343,7 +330,7 @@ export const InviteText = (props: any) => {
                     x="1498.71"
                     y="821.244"
                     fill="#CF9F81"
-                    fontFamily="'Cochin-Italic', 'Cochin'"
+                   fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="24"
                     fontStyle="italic"
                     fontWeight="500"
@@ -352,22 +339,46 @@ export const InviteText = (props: any) => {
                     начало праздника в 17:00
                 </text>
                 <text
-                    x="1463.26"
+                    x="1456.9"
                     y="863.256"
                     fill="#CF9F81"
-                    fontFamily="'Cochin-Italic', 'Cochin'"
+                   fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="24"
                     fontStyle="italic"
                     fontWeight="500"
                     transform="translate(112 -6.51)"
                 >
-                    Просим сообщить о согласии или отказе не позднее
+                    Просим {names.includes(",") ? 'вас' : 'Вас'} сообщить о согласии или отказе не позднее
+                </text>
+                <text
+                    x="1392.85"
+                    y="316.299"
+                    fill="#CF9F81"
+                   fontFamily="'Cormorant Infant', 'serif'"
+                    fontSize="36"
+                    fontStyle="italic"
+                    fontWeight="500"
+                    transform="translate(-9.519 9.567)"
+                >
+                    {names.includes(",") ? 'Дорогие': 'Дорогая'},
+                </text>
+                <text
+                    x="1424.36"
+                    y="379.567"
+                    fill="#CF9F81"
+                   fontFamily="'Cormorant Infant', 'serif'"
+                    fontSize="30"
+                    fontStyle="italic"
+                    fontWeight="500"
+                    transform="translate(-2.585 4.413)"
+                >
+                    {names + '!'}
                 </text>
                 <text
                     x="1762.56"
                     y="899.27"
                     fill="#CF9F81"
-                    fontFamily="'Cochin-Italic', 'Cochin'"
+                   fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="24"
                     fontStyle="italic"
                     fontWeight="500"
