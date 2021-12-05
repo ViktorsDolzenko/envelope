@@ -12,6 +12,7 @@ export const Envelope = () => {
     const [bShowInfo, setBShowInfo] = useState(true)
     let top = useRef(null);
     let card = useRef(null);
+    let text = useRef(null);
     let t1 = useRef();
 
     const {guest} = useParams<{guest?: string}>();
@@ -65,7 +66,10 @@ export const Envelope = () => {
                 rotation: 0
             },
             1.5
-        );
+        )
+        .to(text, {
+           opacity: 1
+        })
     }, []);
 
 
@@ -92,11 +96,13 @@ export const Envelope = () => {
                     unmountOnExit
                 >
                     <div className='info-text' >
-                        <h1>Нажмите на конверт!</h1>
+                        <h1>Вам пришло приглашение!</h1>
+                        <h2>Нажмите на конверт</h2>
                     </div>
                 </CSSTransition>
                 <div className="base"/>
                 <div onClick={() => setToggled(!toggled)} className="card" ref={(el:any) => (card = el)}>
+                    <h5 ref={(el:any) => (text = el)} className='text-for-clowns' >Нажмите на открытку</h5>
                 <ReactCardFlip isFlipped={toggled} flipDirection="horizontal" flipSpeedFrontToBack={1.5} flipSpeedBackToFront={1.5}>
                     <InviteTitle/>
                     <InviteText names={getGuestNames()}/>
