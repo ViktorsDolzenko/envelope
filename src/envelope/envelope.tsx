@@ -18,7 +18,7 @@ export const Envelope = () => {
     const {guest} = useParams<{guest?: string}>();
 
     const getGuestNames = () => {
-        return guest?.split('-').join(', ');
+        return guest?.split('-').join(' и ');
     }
 
     const [toggled, setToggled] = useState(false);
