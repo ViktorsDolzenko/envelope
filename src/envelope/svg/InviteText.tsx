@@ -217,7 +217,7 @@ export const InviteText = (props: any) => {
                    fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="30"
                     fontStyle="italic"
-                    fontWeight="500"
+                    fontWeight="600"
                     transform="translate(-2.76 16.083)"
                 >
                     12 февраля 2022 года
@@ -229,7 +229,7 @@ export const InviteText = (props: any) => {
                    fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="26"
                     fontStyle="italic"
-                    fontWeight="500"
+                    fontWeight="600"
                     transform="translate(-7.605 13)"
                 >
                     может пройти как обычный день и
@@ -241,7 +241,7 @@ export const InviteText = (props: any) => {
                    fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="26"
                     fontStyle="italic"
-                    fontWeight="500"
+                    fontWeight="600"
                     transform="translate(-17.468 9.302)"
                 >
                     не запомниться {(names.indexOf(' ') >= 0) ? 'вам' : 'Вам'} ничем особенным...
@@ -253,7 +253,7 @@ export const InviteText = (props: any) => {
                    fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="26"
                     fontStyle="italic"
-                    fontWeight="500"
+                    fontWeight="600"
                     transform="translate(-14.41 8.26)"
                 >
                     А может стать одним из самых приятных
@@ -265,7 +265,7 @@ export const InviteText = (props: any) => {
                    fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="26"
                     fontStyle="italic"
-                    fontWeight="500"
+                    fontWeight="600"
                     transform="translate(0 11.852)"
                 >
                     дней не только для нас, но и для {(names.indexOf(' ') >= 0) ? 'вас' : 'Вас'}!
@@ -277,7 +277,7 @@ export const InviteText = (props: any) => {
                    fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="26"
                     fontStyle="italic"
-                    fontWeight="500"
+                    fontWeight="600"
                     transform="translate(6 13.143)"
                 >
                     Очень ждём {(names.indexOf(' ') >= 0) ? 'вас' : 'Вас'} на нашем счастливом
@@ -289,7 +289,7 @@ export const InviteText = (props: any) => {
                    fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="26"
                     fontStyle="italic"
-                    fontWeight="500"
+                    fontWeight="600"
                     transform="translate(3 6.723)"
                 >
                     празднике - нашей свадьбе!
@@ -301,7 +301,7 @@ export const InviteText = (props: any) => {
                    fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="24"
                     fontStyle="italic"
-                    fontWeight="500"
+                    fontWeight="600"
                     transform="translate(128)"
                 >
                     Т
@@ -321,7 +321,7 @@ export const InviteText = (props: any) => {
                    fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="24"
                     fontStyle="italic"
-                    fontWeight="500"
+                    fontWeight="600"
                     transform="translate(192)"
                 >
                     в Риге по адресу: Ilūkstes iela 17
@@ -333,7 +333,7 @@ export const InviteText = (props: any) => {
                    fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="24"
                     fontStyle="italic"
-                    fontWeight="500"
+                    fontWeight="600"
                     transform="translate(203 -2)"
                 >
                     начало праздника в 17:00
@@ -345,7 +345,7 @@ export const InviteText = (props: any) => {
                    fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="24"
                     fontStyle="italic"
-                    fontWeight="500"
+                    fontWeight="600"
                     transform="translate(112 -6.51)"
                 >
                     Просим {(names.indexOf(' ') >= 0) ? 'вас' : 'Вас'} сообщить о согласии или отказе не позднее
@@ -357,7 +357,7 @@ export const InviteText = (props: any) => {
                    fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="36"
                     fontStyle="italic"
-                    fontWeight="500"
+                    fontWeight="600"
                     transform="translate(-9.519 9.567)"
                 >
                     {(names.indexOf(' ') >= 0) ? 'Дорогие': 'Дорогая'},
@@ -369,7 +369,7 @@ export const InviteText = (props: any) => {
                    fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="30"
                     fontStyle="italic"
-                    fontWeight="500"
+                    fontWeight="600"
                     transform="translate(-2.585 4.413)"
                 >
                     {names + '!'}
@@ -381,7 +381,7 @@ export const InviteText = (props: any) => {
                    fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="24"
                     fontStyle="italic"
-                    fontWeight="500"
+                    fontWeight="600"
                     transform="translate(0 4)"
                 >
                     01.02.2022
