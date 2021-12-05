@@ -244,7 +244,7 @@ export const InviteText = (props: any) => {
                     fontWeight="500"
                     transform="translate(-17.468 9.302)"
                 >
-                    не запомниться {names.includes(",") ? 'вам' : 'Вам'} ничем особенным...
+                    не запомниться {(names.indexOf(' ') >= 0) ? 'вам' : 'Вам'} ничем особенным...
                 </text>
                 <text
                     x="1361.8"
@@ -268,7 +268,7 @@ export const InviteText = (props: any) => {
                     fontWeight="500"
                     transform="translate(0 11.852)"
                 >
-                    дней не только для нас, но и для {names.includes(",") ? 'вас' : 'Вас'}!
+                    дней не только для нас, но и для {(names.indexOf(' ') >= 0) ? 'вас' : 'Вас'}!
                 </text>
                 <text
                     x="1365.02"
@@ -280,7 +280,7 @@ export const InviteText = (props: any) => {
                     fontWeight="500"
                     transform="translate(6 13.143)"
                 >
-                    Очень ждём {names.includes(",") ? 'вас' : 'Вас'} на нашем счастливом
+                    Очень ждём {(names.indexOf(' ') >= 0) ? 'вас' : 'Вас'} на нашем счастливом
                 </text>
                 <text
                     x="1423.2"
@@ -348,7 +348,7 @@ export const InviteText = (props: any) => {
                     fontWeight="500"
                     transform="translate(112 -6.51)"
                 >
-                    Просим {names.includes(",") ? 'вас' : 'Вас'} сообщить о согласии или отказе не позднее
+                    Просим {(names.indexOf(' ') >= 0) ? 'вас' : 'Вас'} сообщить о согласии или отказе не позднее
                 </text>
                 <text
                     x="1392.85"
@@ -360,7 +360,7 @@ export const InviteText = (props: any) => {
                     fontWeight="500"
                     transform="translate(-9.519 9.567)"
                 >
-                    {names.includes(",") ? 'Дорогие': 'Дорогая'},
+                    {(names.indexOf(' ') >= 0) ? 'Дорогие': 'Дорогая'},
                 </text>
                 <text
                     x="1424.36"
