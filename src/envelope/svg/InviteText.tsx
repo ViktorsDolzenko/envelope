@@ -1,7 +1,7 @@
 import React from "react";
 
 export const InviteText = (props: any) => {
-    const {names} = props;
+    const {names, gender} = props;
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -229,7 +229,7 @@ export const InviteText = (props: any) => {
                    fontFamily="'Cormorant Infant', 'serif'"
                     fontSize="26"
                     fontStyle="italic"
-                    fontWeight="600"
+                    fontWeight="700"
                     transform="translate(-7.605 13)"
                 >
                     может пройти как обычный день и
@@ -360,7 +360,7 @@ export const InviteText = (props: any) => {
                     fontWeight="600"
                     transform="translate(-9.519 9.567)"
                 >
-                    {(names.indexOf(' ') >= 0) ? 'Дорогие': 'Дорогая'},
+                    {gender},
                 </text>
                 <text
                     x="1424.36"

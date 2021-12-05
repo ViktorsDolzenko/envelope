@@ -1,4 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
+import { useLocation } from 'react-router';
 import {CSSTransition} from 'react-transition-group'
 import {gsap, Power1} from 'gsap'
 import {useParams} from 'react-router-dom';
@@ -16,9 +17,14 @@ export const Envelope = () => {
     let t1 = useRef();
 
     const {guest} = useParams<{guest?: string}>();
+    const location = useLocation();
 
     const getGuestNames = () => {
         return guest?.split('-').join(' и ');
+    }
+
+    const getGender = () => {
+       return location.search === '?m' ? 'Дорогой' : location.search === '?f' ? 'Дорогая' : 'Дорогие'
     }
 
     const [toggled, setToggled] = useState(false);
@@ -105,7 +111,7 @@ export const Envelope = () => {
                     <h5 ref={(el:any) => (text = el)} className='text-for-clowns' >Нажмите на открытку</h5>
                 <ReactCardFlip isFlipped={toggled} flipDirection="horizontal" flipSpeedFrontToBack={1.5} flipSpeedBackToFront={1.5}>
                     <InviteTitle/>
-                    <InviteText names={getGuestNames()}/>
+                    <InviteText names={getGuestNames()} gender={getGender()}/>
                 </ReactCardFlip>
 
                 </div>
