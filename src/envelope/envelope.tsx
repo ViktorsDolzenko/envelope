@@ -20,7 +20,7 @@ export const Envelope = () => {
     const location = useLocation();
 
     const getGuestNames = () => {
-        return guest?.split('-').join(' и ');
+        return guest?.split('-').join(' и ').split('and').join(',');
     }
 
     const getGender = () => {
