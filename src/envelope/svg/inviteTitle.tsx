@@ -933,7 +933,7 @@ export const InviteTitle = (props: any) => {
                         fontWeight="500"
                         transform="translate(-13.77 -3.83)"
                     >
-                        12 02 2022
+                        16 04 2022
                     </text>
                     <text
                         x="573.934"

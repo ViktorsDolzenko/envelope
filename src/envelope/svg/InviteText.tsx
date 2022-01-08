@@ -220,7 +220,7 @@ export const InviteText = (props: any) => {
                     fontWeight="600"
                     transform="translate(-2.76 16.083)"
                 >
-                    12 февраля 2022 года
+                    16 апреля 2022 года
                 </text>
                 <text
                     x="1384.72"
@@ -384,7 +384,7 @@ export const InviteText = (props: any) => {
                     fontWeight="600"
                     transform="translate(0 4)"
                 >
-                    01.02.2022
+                    01.04.2022
                 </text>
             </g>
             <defs>

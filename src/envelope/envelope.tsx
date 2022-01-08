@@ -85,11 +85,11 @@ export const Envelope = () => {
         setBShowInfo(false)
     }
 
-    const close = async () => {
-        // @ts-ignore
-        await t1.current.reverse();
-        setBShowInfo(true)
-    }
+    // const close = async () => {
+    //     // @ts-ignore
+    //     await t1.current.reverse();
+    //     setBShowInfo(true)
+    // }
 
 
     return (
